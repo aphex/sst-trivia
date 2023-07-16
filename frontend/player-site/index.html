@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SST Trivia - Player</title>
+
+    <style>
+      body {
+        display: flex;
+        min-height: 100vh;
+        /* mobile viewport bug fix */
+        min-height: -webkit-fill-available;
+      }
+
+      html {
+        height: -webkit-fill-available;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app" class="flex flex-1 flex-col"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

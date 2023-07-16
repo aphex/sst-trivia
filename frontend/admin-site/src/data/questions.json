@@ -1,0 +1,52 @@
+[
+  {
+    "label": "U.S. Capital",
+    "data": {
+      "text": "What is the capital of the United States?",
+      "options": [
+        {
+          "text": "Washington, D.C.",
+          "value": "washington-dc"
+        },
+        {
+          "text": "New York City",
+          "value": "new-york-city"
+        },
+        {
+          "text": "Los Angeles",
+          "value": "los-angeles"
+        },
+        {
+          "text": "Chicago",
+          "value": "chicago"
+        }
+      ],
+      "answer": "washington-dc"
+    }
+  },
+  {
+    "label": "U.K. Capital",
+    "data": {
+      "text": "What is the capital of the United Kingdom?",
+      "options": [
+        {
+          "text": "London",
+          "value": "london"
+        },
+        {
+          "text": "Manchester",
+          "value": "manchester"
+        },
+        {
+          "text": "Liverpool",
+          "value": "liverpool"
+        },
+        {
+          "text": "Birmingham",
+          "value": "birmingham"
+        }
+      ],
+      "answer": "london"
+    }
+  }
+]
