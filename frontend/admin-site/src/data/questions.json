@@ -1,52 +1,148 @@
 [
   {
-    "label": "U.S. Capital",
+    "label": "Serverless",
     "data": {
-      "text": "What is the capital of the United States?",
+      "text": "Serverless code runs on which of the following?",
       "options": [
         {
-          "text": "Washington, D.C.",
-          "value": "washington-dc"
+          "text": "Potatoes",
+          "value": "potatoes"
         },
         {
-          "text": "New York City",
-          "value": "new-york-city"
+          "text": "Servers",
+          "value": "servers"
         },
         {
-          "text": "Los Angeles",
-          "value": "los-angeles"
+          "text": "Hope",
+          "value": "hope"
         },
         {
-          "text": "Chicago",
-          "value": "chicago"
+          "text": "Developer Tears",
+          "value": "developer-tears"
         }
       ],
-      "answer": "washington-dc"
+      "answer": "servers"
     }
   },
   {
-    "label": "U.K. Capital",
+    "label": "AWS",
     "data": {
-      "text": "What is the capital of the United Kingdom?",
+      "text": "AWS Stands for which of the following?",
       "options": [
         {
-          "text": "London",
-          "value": "london"
+          "text": "Amazon Web Systems",
+          "value": "amazon-web-systems"
         },
         {
-          "text": "Manchester",
-          "value": "manchester"
+          "text": "Amazon Web Services",
+          "value": "amazon-web-services"
         },
         {
-          "text": "Liverpool",
-          "value": "liverpool"
-        },
-        {
-          "text": "Birmingham",
-          "value": "birmingham"
+          "text": "AWSome Sauce",
+          "value": "awesome-sauce"
         }
       ],
-      "answer": "london"
+      "answer": "amazon-web-services"
+    }
+  },
+  {
+    "label": "Database",
+    "data": {
+      "text": "Which AWS service provides a fully managed NoSQL database?",
+      "options": [
+        {
+          "text": "RDS",
+          "value": "rds"
+        },
+        {
+          "text": "DynamoDB",
+          "value": "dynamodb"
+        },
+        {
+          "text": "Redshift",
+          "value": "redshift"
+        },
+        {
+          "text": "CloudFront",
+          "value": "cloudfront"
+        }
+      ],
+      "answer": "dynamodb"
+    }
+  },
+  {
+    "label": "Celebrity",
+    "data": {
+      "text": "Which celebrity may have given a quote on SST?",
+      "options": [
+        {
+          "text": "Rosalind Franklin",
+          "value": "franklin"
+        },
+        {
+          "text": "Mark Twain",
+          "value": "twain"
+        },
+        {
+          "text": "Taylor Swift",
+          "value": "swift"
+        },
+        {
+          "text": "Danny DeVito",
+          "value": "devito"
+        }
+      ],
+      "answer": "swift"
+    }
+  },
+  {
+    "label": "Meaning of Life",
+    "data": {
+      "text": "What is the meaning of life, the universe and everything?",
+      "options": [
+        {
+          "text": "42",
+          "value": "forty-two"
+        },
+        {
+          "text": "Taco Tuesday",
+          "value": "taco-tuesday"
+        },
+        {
+          "text": "The ShamWow",
+          "value": "shamwow"
+        },
+        {
+          "text": "DS9 S1E10",
+          "value": "ds9"
+        }
+      ],
+      "answer": "forty-two"
+    }
+  },
+  {
+    "label": "CHUD",
+    "data": {
+      "text": "In the 1984 movie C.H.U.D, what does C.H.U.D stand for?",
+      "options": [
+        {
+          "text": "Canned Ham Under Duress",
+          "value": "ham"
+        },
+        {
+          "text": "Control Humans Using Drugs",
+          "value": "drugs"
+        },
+        {
+          "text": "Cannibalistic Humanoid Underground Dwellers",
+          "value": "cannibalistic"
+        },
+        {
+          "text": "Canadian Hillbilly Unstoppable Demons",
+          "value": "demons"
+        }
+      ],
+      "answer": "cannibalistic"
     }
   }
 ]

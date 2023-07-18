@@ -49,7 +49,10 @@ export const del: APIGatewayProxyHandlerV2 = async () => {
 
     await postToAllConnections({
       type: 'question-ended',
-      correct: winners.map((w) => w.username),
+      correct: winners.map((w) => ({
+        connectionId: w.connectionId,
+        username: w.username,
+      })),
       winner: winner
         ? {
             connectionId: winner.connectionId,

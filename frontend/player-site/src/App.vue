@@ -13,6 +13,8 @@
   const question = ref<NonNullable<QuestionGetResponseBody['question']>>()
   const answered = useStorage<string[]>('answered-questions', [])
   const winner = refAutoReset(false, 5000)
+  const correct = refAutoReset(false, 5000)
+  const wrong = refAutoReset(false, 5000)
 
   /* -------------------------------- Computed -------------------------------- */
   const hasAnsweredQuestion = computed(
@@ -49,13 +51,33 @@
         const { type, ..._question } = data
         question.value = _question
       } else if (data.type === 'question-ended') {
-        const { winner: _winner } = data
+        const { winner: _winner, correct: _correct } = data
 
         question.value = undefined
-        if (!_winner) return
+        // If there was no winner, everyone was wrong
+        if (!_winner) {
+          wrong.value = true
+          return
+        }
 
+        // If the winner is the current player, they are the winner
         const { connectionId: _connectionId } = _winner
-        if (_connectionId === connectionId.value) winner.value = true
+        if (_connectionId === connectionId.value) {
+          winner.value = true
+          return
+        }
+
+        const isCorrect = !!_correct.find(
+          ({ connectionId: _connectionId }) => _connectionId === connectionId.value,
+        )
+        // If they did not win but got the question correct, they were close
+        if (isCorrect) {
+          correct.value = true
+          return
+        }
+
+        // Otherwise, they were wrong
+        wrong.value = true
       }
     },
   })
@@ -121,6 +143,8 @@
       <p v-if="!username">Logging in...</p>
       <div v-else="!question">
         <p>Alright {{ username }}, hold on to your butt.</p>
+        <p class="text-green-500" v-if="correct">You got it right! 💪</p>
+        <p class="text-red-500" v-else-if="wrong">Aw Dang, better luck next time! 🤞</p>
       </div>
     </div>
     <div v-else class="flex flex-1 flex-col gap-4">

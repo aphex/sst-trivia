@@ -15,7 +15,10 @@ export type QuestionAddedEventData = {
 
 export type QuestionEndedEventData = {
   type: 'question-ended'
-  correct: string[]
+  correct: {
+    connectionId: string
+    username: string
+  }[]
   winner?: {
     connectionId: string
     username: string
